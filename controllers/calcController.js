@@ -6,8 +6,6 @@ const { CALC_METHODS } = require("../utils/constants")
 
 class Calculator {
   static calc(ctx) {
-      console.log(ctx.request.query.expression)
-
       const validationResult = validator.validate(ctx.request.body);
 
       if (validationResult !== true) {

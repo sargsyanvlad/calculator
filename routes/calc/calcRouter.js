@@ -5,7 +5,7 @@ const router = new Router();
 
 router.post('/', async (ctx) => {
   const result = await calcController.calc(ctx);
-  return ctx.created(result);
+  return ctx.ok(result);
 });
 
 
